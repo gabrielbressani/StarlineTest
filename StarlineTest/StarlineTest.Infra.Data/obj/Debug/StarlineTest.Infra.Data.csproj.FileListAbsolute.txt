@@ -1,0 +1,12 @@
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Infra.Data\bin\Debug\StarlineTest.Infra.Data.dll.config
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Infra.Data\bin\Debug\StarlineTest.Infra.Data.dll
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Infra.Data\bin\Debug\StarlineTest.Infra.Data.pdb
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Infra.Data\bin\Debug\EntityFramework.dll
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Infra.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Infra.Data\bin\Debug\StarlineTest.Domain.dll
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Infra.Data\bin\Debug\StarlineTest.Domain.pdb
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Infra.Data\bin\Debug\EntityFramework.xml
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Infra.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Infra.Data\obj\Debug\StarlineTest.Infra.Data.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Infra.Data\obj\Debug\StarlineTest.Infra.Data.dll
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Infra.Data\obj\Debug\StarlineTest.Infra.Data.pdb

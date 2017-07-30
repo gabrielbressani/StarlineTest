@@ -1,0 +1,5 @@
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Domain\bin\Debug\StarlineTest.Domain.dll
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Domain\bin\Debug\StarlineTest.Domain.pdb
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Domain\obj\Debug\StarlineTest.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Domain\obj\Debug\StarlineTest.Domain.dll
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Domain\obj\Debug\StarlineTest.Domain.pdb
