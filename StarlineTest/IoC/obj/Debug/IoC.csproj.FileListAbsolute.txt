@@ -1,0 +1,15 @@
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\IoC\bin\Debug\IoC.dll
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\IoC\bin\Debug\IoC.pdb
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\IoC\bin\Debug\Ninject.dll
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\IoC\bin\Debug\StarlineTest.Application.dll
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\IoC\bin\Debug\StarlineTest.Domain.dll
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\IoC\bin\Debug\StarlineTest.Infra.Data.dll
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\IoC\bin\Debug\EntityFramework.dll
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\IoC\bin\Debug\StarlineTest.Application.pdb
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\IoC\bin\Debug\StarlineTest.Domain.pdb
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\IoC\bin\Debug\StarlineTest.Infra.Data.pdb
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\IoC\bin\Debug\Ninject.xml
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\IoC\bin\Debug\EntityFramework.xml
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\IoC\obj\Debug\IoC.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\IoC\obj\Debug\IoC.dll
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\IoC\obj\Debug\IoC.pdb

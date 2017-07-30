@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using StarlineTest.Application.Interface;
 using StarlineTest.Domain.Entities;
 using StarlineTest.Domain.Interfaces;
 using StarlineTest.MVC.ViewModel;
@@ -12,13 +13,6 @@ namespace StarlineTest.MVC.Controllers
 {
     public class HomeController : Controller
     {
-        protected IUserRepository UsuarioRepository { get; private set; }
-
-        public HomeController(IUserRepository usuarioRepository)
-        {
-            UsuarioRepository = usuarioRepository;
-        }
-
         public ActionResult Index()
         {
             return View();

@@ -3,3 +3,5 @@ C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Applica
 C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Application\obj\Debug\StarlineTest.Application.csprojResolveAssemblyReference.cache
 C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Application\obj\Debug\StarlineTest.Application.dll
 C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Application\obj\Debug\StarlineTest.Application.pdb
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Application\bin\Debug\StarlineTest.Domain.dll
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Application\bin\Debug\StarlineTest.Domain.pdb
