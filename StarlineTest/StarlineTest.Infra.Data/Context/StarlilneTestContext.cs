@@ -15,6 +15,7 @@ namespace StarlineTest.Infra.Data.Context
         }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<Question> Questions { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -36,6 +37,10 @@ namespace StarlineTest.Infra.Data.Context
                 .Configurations
                     .Add(new UserConfiguration());
 
+            modelBuilder
+                .Configurations
+                    .Add(new QuestionConfiguration());
+
             base.OnModelCreating(modelBuilder);
         }
 
@@ -55,10 +60,6 @@ namespace StarlineTest.Infra.Data.Context
 
         private void FixEfProviderServicesProblem()
         {
-            // The Entity Framework provider type 'System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer'
-            // for the 'System.Data.SqlClient' ADO.NET provider could not be loaded. 
-            // Make sure the provider assembly is available to the running application. 
-            // See http://go.microsoft.com/fwlink/?LinkId=260882 for more information.
             var instance = System.Data.Entity.SqlServer.SqlProviderServices.Instance;
         }
     }

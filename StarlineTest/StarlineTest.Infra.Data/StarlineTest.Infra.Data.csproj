@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\StarlilneTestContext.cs" />
+    <Compile Include="EntityConfig\QuestionConfiguration.cs" />
     <Compile Include="EntityConfig\UserConfiguration.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
