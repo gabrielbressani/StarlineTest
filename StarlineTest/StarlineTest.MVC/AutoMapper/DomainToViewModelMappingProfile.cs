@@ -9,6 +9,7 @@ namespace StarlineTest.MVC.AutoMapper
         public DomainToViewModelMappingProfile()
         {
             CreateMap<User, UserViewModel>();
+            CreateMap<Question, QuestionViewModel>();
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace StarlineTest.MVC.ViewModel
@@ -16,5 +17,7 @@ namespace StarlineTest.MVC.ViewModel
 
         [ScaffoldColumn(false)]
         public DateTime RegistrationDate { get; set; }
+
+        public virtual IEnumerable<QuestionViewModel> Questions { get; set; }
     }
 }
