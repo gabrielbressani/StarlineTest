@@ -12,6 +12,8 @@ namespace StarlineTest.MVC.ViewModel
         [MaxLength(200, ErrorMessage = "O campo \"Nome\" pode ter no máximo 200 caracteres.")]
         public string Nome { get; set; }
 
+        public bool Active { get; set; }
+
         [ScaffoldColumn(false)]
         public DateTime RegistrationDate { get; set; }
     }

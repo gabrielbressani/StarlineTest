@@ -13,3 +13,5 @@ C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\IoC\bin\Debug\Entity
 C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\IoC\obj\Debug\IoC.csprojResolveAssemblyReference.cache
 C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\IoC\obj\Debug\IoC.dll
 C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\IoC\obj\Debug\IoC.pdb
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\IoC\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\IoC\bin\Debug\EntityFramework.SqlServer.xml

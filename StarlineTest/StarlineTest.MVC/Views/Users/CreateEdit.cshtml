@@ -1,0 +1,58 @@
+﻿@model StarlineTest.MVC.ViewModel.UserViewModel
+
+<div class="modal" id="create-user-modal" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">
+                    Adicionar Usuário
+                </h4>
+            </div>
+            <div id="container-create-user" class="modal-body">
+                @using (Ajax.BeginForm(new AjaxOptions() { UpdateTargetId = "main-modal", OnSuccess = "reloadUsers" }))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.HiddenFor(model => model.UserId)
+
+                    <div class="form-horizontal">
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Nome, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Nome, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Active, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                <div class="checkbox">
+                                    @Html.EditorFor(model => model.Active)
+                                    @Html.ValidationMessageFor(model => model.Active, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                <div class="modal-footer">
+                    <button type="button" onclick="$('form', '#container-create-user').submit()" class="btn btn-default">Salvar</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+<script>
+    $(function () {
+        $("#create-user-modal").modal({ backdrop:false});
+    })    
+</script>

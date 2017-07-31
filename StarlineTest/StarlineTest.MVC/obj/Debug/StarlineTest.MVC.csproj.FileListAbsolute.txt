@@ -57,3 +57,5 @@ C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.MVC\bin
 C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.MVC\bin\Ninject.Web.Mvc.xml
 C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.MVC\bin\StarlineTest.Infra.Data.pdb
 C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.MVC\bin\EntityFramework.xml
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.MVC\bin\EntityFramework.SqlServer.dll
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.MVC\bin\EntityFramework.SqlServer.xml
