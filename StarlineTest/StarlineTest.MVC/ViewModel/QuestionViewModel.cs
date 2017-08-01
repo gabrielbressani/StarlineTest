@@ -9,6 +9,13 @@ namespace StarlineTest.MVC.ViewModel
 {
     public class QuestionViewModel
     {
+        public QuestionViewModel() {}
+
+        public QuestionViewModel(int userID)
+        {
+            UserId = userID;
+        }
+
         [Key]
         public int QuestionId { get; set; }
 

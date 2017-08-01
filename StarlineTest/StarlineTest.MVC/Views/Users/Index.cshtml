@@ -4,51 +4,81 @@
     ViewBag.Title = "SGP - Usuários";
 }
 
+<h3>
+    Usuários
+</h3>
+
+<small>
+    @Ajax.ActionLink("Home", "Index", new AjaxOptions() { UpdateTargetId = "main" })
+    > Usuários
+</small>
+
+<hr />
+
 <p class="mtm">
     @Ajax.ActionLink("Adicionar", "Create", new AjaxOptions() { UpdateTargetId = "main-modal" })
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Nome)
-        </th>
-        <th style="width:5%">
-            @Html.DisplayNameFor(model => model.Active)
-        </th>
-        <th style="width:10%"></th>
-    </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Nome)
-        </td>
-        <td>
-            <div class="center">
-                @Html.DisplayFor(modelItem => item.Active)
-            </div>
-        </td>
-        <td>
-            <div class="fr">
-                @Ajax.ActionLink("Editar", "Edit", new { id = item.UserId }, new AjaxOptions() { UpdateTargetId = "main-modal" }) |
-                @Ajax.ActionLink("Excluir", "Delete", new { id = item.UserId }, new AjaxOptions()
-                {
-                    HttpMethod = "POST",
-                    Confirm = "Você realmente deseja excluir este registro?",
-                    OnSuccess = "reloadUsers"
-                }) 
-            </div>
-        </td>
-    </tr>
+@if (!Model.Any())
+{
+    <p>
+        Nenhum registro encontrado.
+    </p>
 }
-</table>
+else
+{
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th style="width:5%">
+                @Html.DisplayNameFor(model => model.Active)
+            </th>
+            <th style="width:25%"></th>
+        </tr>
 
-<script>
-    function reloadUsers() {
-        $.ajax({
-            url: '@Url.Action("Index", "Users")'
-        }).done(function (data) {
-            $("#main").html(data);
-        });
-    }
-</script>
+         @foreach (var item in Model)
+         {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    <div class="center">
+                        @Html.DisplayFor(modelItem => item.Active)
+                    </div>
+                </td>
+                <td>
+                    <div class="fr">
+                        @Ajax.ActionLink("Banco de Questões", "Index", "Questions", new { userId = item.UserId }, new AjaxOptions()
+                        {
+                            UpdateTargetId = "main"
+                        }) |
+
+                        @Ajax.ActionLink("Editar", "Edit", new { id = item.UserId }, new AjaxOptions() { UpdateTargetId = "main-modal" }) |
+                        
+                        @Ajax.ActionLink("Excluir", "Delete", new { id = item.UserId }, new AjaxOptions()
+                        {
+                            HttpMethod = "POST",
+                            Confirm = "Você realmente deseja excluir este registro?",
+                            OnSuccess = "reloadUsers"
+                        }) 
+                    </div>
+                </td>
+            </tr>
+        }
+    </table>
+}
+
+@section Scripts{
+    <script>
+        function reloadUsers() {
+            $.ajax({
+                url: '@Url.Action("Index", "Users")'
+            }).done(function (data) {
+                $("#main").html(data);
+            });
+        }
+    </script>
+}

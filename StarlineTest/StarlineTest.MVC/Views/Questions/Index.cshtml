@@ -1,0 +1,71 @@
+﻿@model StarlineTest.MVC.ViewModel.UserViewModel
+
+@{
+    ViewBag.Title = "SGP - Questões";
+}
+
+<h3>
+    Banco de questões
+</h3>
+
+<small>
+    @Ajax.ActionLink("Home", "Index", "Users", new AjaxOptions() { UpdateTargetId = "main" })
+    > @Ajax.ActionLink(Model.Nome, "Index", "Users", new AjaxOptions() { UpdateTargetId = "main" })
+    > Banco de questões
+</small>
+
+<hr />
+
+<p class="mtm">
+    @Ajax.ActionLink("Adicionar", "Create", new { userId = Model.UserId }, new AjaxOptions() { UpdateTargetId = "main-modal" })
+</p>
+
+@if (Model.Questions == null)
+{
+    <p>
+        Nenhum registro encontrado.
+    </p>
+}
+else
+{
+    <table class="table">
+        <tr>
+            <th>
+                Enunciado
+            </th>
+            <th>
+                Respostas
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model.Questions)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Enunciated)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Answers)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserId)
+                </td>
+                <td>
+                    <div class="fr">
+                        @Html.ActionLink("Edit", "Edit", new { id=item.QuestionId }) |
+                        @Html.ActionLink("Delete", "Delete", new { id=item.QuestionId })
+                    </div>
+                </td>
+            </tr>
+        }
+    </table>
+}
+
+@section Scripts{
+    <script>
+        $(function () {
+            activeMenu("#menu-question");
+        })
+    </script>
+    }

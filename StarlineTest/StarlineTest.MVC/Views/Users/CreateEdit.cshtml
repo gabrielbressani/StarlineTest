@@ -13,7 +13,11 @@
                 @using (Ajax.BeginForm(new AjaxOptions() { UpdateTargetId = "main-modal", OnSuccess = "reloadUsers" }))
                 {
                     @Html.AntiForgeryToken()
-                    @Html.HiddenFor(model => model.UserId)
+                    
+                    if (Model?.UserId > 0)
+                    {
+                        @Html.HiddenFor(model => model.UserId)
+                    }
 
                     <div class="form-horizontal">
                         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
