@@ -18,12 +18,13 @@ namespace StarlineTest.Infra.Data.EntityConfig
                     .IsRequired();
 
             Property(q => q.Answers)
-                .HasMaxLength(400)
+                .HasMaxLength(500)
                     .IsOptional();
 
             HasRequired(u => u.User)
                 .WithMany(u => u.Questions)
-                    .HasForeignKey(u => u.UserId);
+                    .HasForeignKey(u => u.UserId)
+                        .WillCascadeOnDelete();
         }
     }
 }
