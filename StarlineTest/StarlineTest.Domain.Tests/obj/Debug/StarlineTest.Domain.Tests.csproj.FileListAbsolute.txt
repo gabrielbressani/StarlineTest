@@ -1,0 +1,8 @@
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Domain.Tests\bin\Debug\StarlineTest.Domain.Tests.dll
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Domain.Tests\bin\Debug\StarlineTest.Domain.Tests.pdb
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Domain.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Domain.Tests\bin\Debug\StarlineTest.Domain.dll
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Domain.Tests\bin\Debug\StarlineTest.Domain.pdb
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Domain.Tests\obj\Debug\StarlineTest.Domain.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Domain.Tests\obj\Debug\StarlineTest.Domain.Tests.dll
+C:\Users\Gabriel\Documents\GitHub\StarlineTest\StarlineTest\StarlineTest.Domain.Tests\obj\Debug\StarlineTest.Domain.Tests.pdb
