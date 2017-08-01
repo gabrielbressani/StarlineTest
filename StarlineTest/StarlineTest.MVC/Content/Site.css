@@ -46,3 +46,7 @@ textarea {
 .w100 {
     width: 100%!important;
 }
+
+.block {
+    display: block;
+}

@@ -27,8 +27,8 @@
                         <div class="form-group">
                             @Html.LabelFor(model => model.Enunciated, "Enunciado", htmlAttributes: new { @class = "control-label col-md-3" })
                             <div class="col-md-9">
-                                @Html.TextAreaFor(model => model.Enunciated, new { htmlAttributes = new { @class = "form-control w100" } })
-                                @Html.ValidationMessageFor(model => model.Enunciated, "", new { @class = "text-danger" })
+                                @Html.TextAreaFor(model => model.Enunciated, new {  @class = "form-control w100", rows = 5})
+                                @Html.ValidationMessageFor(model => model.Enunciated, "", new { @class = "text-danger block" })
                             </div>
                         </div>
 
@@ -55,8 +55,11 @@
                         <div class="form-group" id="answers-container">
                             @Html.LabelFor(model => model.Answers, "Respostas", htmlAttributes: new { @class = "control-label col-md-3" })
                             <div class="col-md-9">
-                                @Html.EditorFor(model => model.Answers, new { htmlAttributes = new { @class = "form-control" } })
-                                @Html.ValidationMessageFor(model => model.Answers, "", new { @class = "text-danger" })
+                                @Html.TextAreaFor(model => model.Answers, new { @class = "form-control w100", rows = 5 })
+                                <small>
+                                    Separe as respostas por ;
+                                </small>
+                                @Html.ValidationMessageFor(model => model.Answers, "", new { @class = "text-danger block" })
                             </div>
                         </div>
                     </div>
