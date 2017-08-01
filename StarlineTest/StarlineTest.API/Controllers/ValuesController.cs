@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StarlineTest.Application.Interface;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,6 +10,16 @@ namespace StarlineTest.API.Controllers
 {
     public class ValuesController : ApiController
     {
+        protected IQuestionAppService QuestionAppService { get; private set; }
+        protected IUserAppService UserAppService { get; private set; }
+
+        public ValuesController(IQuestionAppService questionAppService,
+            IUserAppService userAppService)
+        {
+            QuestionAppService = questionAppService;
+            UserAppService = userAppService;
+        }
+
         // GET api/values
         public IEnumerable<string> Get()
         {
