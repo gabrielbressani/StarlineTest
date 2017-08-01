@@ -88,7 +88,7 @@
             return;
         }
 
-        loading = $(element.getAttribute("data-ajax-loading"));
+        loading = $("#ajaxLoaderDiv");
         duration = parseInt(element.getAttribute("data-ajax-loading-duration"), 10) || 0;
 
         $.extend(options, {
