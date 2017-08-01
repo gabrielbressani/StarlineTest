@@ -1,4 +1,5 @@
 ﻿@model StarlineTest.MVC.ViewModel.QuestionViewModel
+@using StarlineTest.Domain.Enumerators
 
 <div class="modal" id="create-question-modal">
     <div class="modal-dialog">
@@ -36,15 +37,15 @@
                             <div class="col-md-9">
                                 <label class="radio-inline" for="discursive">
                                     @Html.RadioButton("TypeOfQuestion", 
-                                        StarlineTest.Domain.Enumerators.TypeOfQuestion.Discursive, 
-                                        isChecked: true, 
+                                        TypeOfQuestion.Discursive, 
+                                        isChecked: Model.TypeOfQuestion == TypeOfQuestion.Discursive, 
                                         htmlAttributes: new { id = "discursive"})
                                         Discursiva
                                 </label>
                                 <label class="radio-inline" for="objective">
                                     @Html.RadioButton("TypeOfQuestion",
                                         StarlineTest.Domain.Enumerators.TypeOfQuestion.Objective,
-                                        isChecked: false,
+                                        isChecked: Model.TypeOfQuestion == TypeOfQuestion.Objective,
                                         htmlAttributes: new { id = "objective" })
                                         Objetiva
                                 </label>
@@ -83,6 +84,7 @@
     function toggleAnswer() {
         if ($("#discursive").is(":checked"))
         {
+            $("#Answers").val("");
             $("#answers-container").hide();
         }
         else

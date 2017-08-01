@@ -20,7 +20,7 @@
     @Ajax.ActionLink("Adicionar", "Create", new { userId = Model.UserId }, new AjaxOptions() { UpdateTargetId = "main-modal" })
 </p>
 
-@if (Model.Questions == null)
+@if (Model.Questions == null || !Model.Questions.Any())
 {
     <p>
         Nenhum registro encontrado.
@@ -32,6 +32,9 @@ else
         <tr>
             <th>
                 Enunciado
+            </th>
+            <th>
+                Tipo da Questão
             </th>
             <th>
                 Respostas
@@ -46,15 +49,21 @@ else
                     @Html.DisplayFor(modelItem => item.Enunciated)
                 </td>
                 <td>
+                    @Html.DisplayFor(modelItem => item.TypeOfQuestion)
+                </td>
+                <td>
                     @Html.DisplayFor(modelItem => item.Answers)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.UserId)
-                </td>
-                <td>
                     <div class="fr">
-                        @Html.ActionLink("Edit", "Edit", new { id=item.QuestionId }) |
-                        @Html.ActionLink("Delete", "Delete", new { id=item.QuestionId })
+                        @Ajax.ActionLink("Editar", "Edit", new { id = item.QuestionId }, new AjaxOptions() { UpdateTargetId = "main-modal" }) |
+
+                        @Ajax.ActionLink("Excluir", "Delete", new { id = item.QuestionId }, new AjaxOptions()
+                        {
+                            HttpMethod = "POST",
+                            Confirm = "Você realmente deseja excluir este registro?",
+                            OnSuccess = "reloadQuestions"
+                        })
                     </div>
                 </td>
             </tr>
@@ -62,10 +71,12 @@ else
     </table>
 }
 
-@section Scripts{
-    <script>
-        $(function () {
-            activeMenu("#menu-question");
-        })
-    </script>
+<script>
+    function reloadQuestions() {
+        $.ajax({
+            url: '@Url.Action("Index", "Questions", new { userId = Model.UserId })'
+        }).done(function (data) {
+            $("#main").html(data);
+        });
     }
+</script>

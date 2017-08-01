@@ -13,7 +13,7 @@ namespace StarlineTest.Domain.Entities
 
         public DateTime RegistrationDate { get; set; }
 
-        public virtual IEnumerable<Question> Questions { get; set; }
+        public virtual ICollection<Question> Questions { get; set; }
 
         public bool UserActiveOfThisYear(User user)
         {

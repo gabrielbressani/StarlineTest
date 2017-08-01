@@ -53,5 +53,36 @@ namespace StarlineTest.MVC.Controllers
 
             return PartialView("CreateEdit", questionViewModel);
         }
+
+        public ActionResult Edit(int id)
+        {
+            var questionViewModel = Mapper.Map<Question, QuestionViewModel>(QuestionAppService.GetById(id));
+
+            return PartialView("CreateEdit", questionViewModel);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(QuestionViewModel questionViewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                var question = Mapper.Map<QuestionViewModel, Question>(questionViewModel);
+                QuestionAppService.Update(question);
+
+                return Json(new { Success = true }, JsonRequestBehavior.AllowGet);
+            }
+
+            return PartialView("CreateEdit", questionViewModel);
+        }
+
+        [HttpPost]
+        public ActionResult Delete(int id)
+        {
+            var question = QuestionAppService.GetById(id);
+            QuestionAppService.Remove(question);
+
+            return Json(new { Success = true }, JsonRequestBehavior.AllowGet);
+        }
     }
 }

@@ -22,7 +22,7 @@ namespace StarlineTest.Infra.Data.EntityConfig
                     .IsOptional();
 
             HasRequired(u => u.User)
-                .WithMany()
+                .WithMany(u => u.Questions)
                     .HasForeignKey(u => u.UserId);
         }
     }

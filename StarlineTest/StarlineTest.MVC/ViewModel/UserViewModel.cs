@@ -18,6 +18,6 @@ namespace StarlineTest.MVC.ViewModel
         [ScaffoldColumn(false)]
         public DateTime RegistrationDate { get; set; }
 
-        public virtual IEnumerable<QuestionViewModel> Questions { get; set; }
+        public virtual ICollection<QuestionViewModel> Questions { get; set; }
     }
 }
