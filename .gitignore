@@ -1,16 +1,1 @@
-*.suo
-*.sln
-StarlineTest/IoC/bin/Debug/IoC.dll
-StarlineTest/IoC/bin/Debug/IoC.pdb
-StarlineTest/IoC/bin/Debug/StarlineTest.Application.pdb
-StarlineTest/IoC/bin/Debug/StarlineTest.Infra.Data.dll
-StarlineTest/StarlineTest.Application/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-StarlineTest/StarlineTest.Application/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-StarlineTest/StarlineTest.MVC/obj/Debug/StarlineTest.MVC.pdb
-StarlineTest/StarlineTest.Infra.Data/obj/Debug/StarlineTest.Infra.Data.pdb
-StarlineTest/IoC/bin/Debug/IoC.dll
-*.pdb
-StarlineTest/IoC/bin/Debug/StarlineTest.Infra.Data.dll
-*.cache
-*.pdb
-*.dll
+
