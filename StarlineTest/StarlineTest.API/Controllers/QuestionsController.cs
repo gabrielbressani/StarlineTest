@@ -9,7 +9,6 @@ using System.Web.Http;
 
 namespace StarlineTest.API.Controllers
 {
-    [Route("api/Questions")]
     public class QuestionsController : ApiController
     {
         protected IQuestionAppService QuestionAppService { get; private set; }
@@ -19,17 +18,17 @@ namespace StarlineTest.API.Controllers
             QuestionAppService = questionAppService;
         }
 
-        // GET apli/Questions
-        public Question[] Get()
+        // GET api/values/5
+        public IHttpActionResult Get(int id)
         {
-            return QuestionAppService.GetAll().ToArray();
-        }
+            var question = QuestionAppService.GetById(id);
 
-        // GET apli/Questions/5
-        public string Get(int id)
-        {
-            return QuestionAppService.GetById(id).Answers;
+            return Ok(new {
+                QuestionId = question.QuestionId,
+                TypeOfQuestion = question.TypeOfQuestion,
+                Enunciated = question.Enunciated,
+                Answers = question.Answers
+            });
         }
-
     }
 }
